@@ -9,5 +9,5 @@
 .button:active {
   background-color: #424242;
   box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  transform: translateY(2px);
 }
