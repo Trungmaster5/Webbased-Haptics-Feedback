@@ -2,6 +2,7 @@
 'use strict';
 
 window.navigator = window.navigator || {};
+navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
 document.getElementById('vib_bar').addEventListener('click',function(){
   navigator.vibrate(100);
 });
