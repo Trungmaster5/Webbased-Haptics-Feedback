@@ -13,8 +13,28 @@ if (navigator.vibrate) {
 }
 // window.navigator = window.navigator || {};
 // navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
-document.getElementById('vib-bar').addEventListener('click',function(){
-  navigator.vibrate(1000);
+document.getElementById('vib-bar-100').addEventListener('click',function(){
+  navigator.vibrate(100);
+  // window.navigator.vibrate(1000);
+});
+
+document.getElementById('vib-bar-200').addEventListener('click',function(){
+  navigator.vibrate(200);
+  // window.navigator.vibrate(1000);
+});
+
+document.getElementById('vib-bar-300').addEventListener('click',function(){
+  navigator.vibrate(300);
+  // window.navigator.vibrate(1000);
+});
+
+document.getElementById('vib-bar-400').addEventListener('click',function(){
+  navigator.vibrate(400);
+  // window.navigator.vibrate(1000);
+});
+
+document.getElementById('vib-bar-500').addEventListener('click',function(){
+  navigator.vibrate(500);
   // window.navigator.vibrate(1000);
 });
       // if (navigator.vibrate === undefined) {
