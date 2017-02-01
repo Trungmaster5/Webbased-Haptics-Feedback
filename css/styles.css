@@ -1,8 +1,14 @@
-button {
+.button {
   height:20px;
   background-color: #9E9E9E;
   margin-top:100px;
   padding-bottom:10px;
   position:relative;
   width: 100%;
+}
+
+.button:active {
+  background-color: #424242;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
