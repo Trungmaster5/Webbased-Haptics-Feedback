@@ -3,9 +3,9 @@
 */
 window.navigator = window.navigator || {};
 // navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
-document.getElementById('vib_bar').addEventListener('click',function(){
+document.getElementById('vib-bar').addEventListener('click',function(){
   // navigator.vibrate(1000);
-  window.navigator.vibrate(200)
+  window.navigator.vibrate(1000);
 });
       // if (navigator.vibrate === undefined) {
       //     document.getElementById('v-unsupported').classList.remove('hidden');
