@@ -10,7 +10,7 @@ if (navigator.vibrate) {
   console.log('we can vibrate');
 } else {
   console.log('no vibration for you :-(');
-}
+};
 
 $(document).on("pagecreate","#pageone",function(){
   $('p').on("swipe",function(){
