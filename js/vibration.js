@@ -15,6 +15,7 @@ if (navigator.vibrate) {
 $(document).on("pagecreate","#pageone",function(){
   $("button").on("swipe",function(){
       navigator.vibrate(100);
+      $('.button').css({"background-color":"red"})
       // window.navigator.vibrate(1000);
     });
 });
