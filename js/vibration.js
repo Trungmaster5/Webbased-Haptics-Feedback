@@ -21,10 +21,12 @@ $(document).on("pagecreate","#pageone",function(){
     });
 
     $('#vib-bar-200').on("swipe",function(){
-        $('#vib-bar-200').css({"background-color":"red"});
+        $(this).css({"background-color":"red"});
         navigator.vibrate(200);
         // window.navigator.vibrate(1000);
-        $('#vib-bar-200').css({"background-color":"#9E9E9E"});
+        $(this).delay(200).queue(function(){
+          $(this).css({"background-color":"#9E9E9E"};
+        });
       });
 
       $('#vib-bar-300').on("swipe",function(){
