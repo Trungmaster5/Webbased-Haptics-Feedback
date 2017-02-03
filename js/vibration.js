@@ -72,6 +72,15 @@ $(document).on("pagecreate","#pageone",function(){
       }
     });
 
+    //* Scroll vibration *//
+    $(".bar").scroll(function() {
+        $(this).css({"background-color":"red"});
+        navigator.vibrate(100);
+        // window.navigator.vibrate(1000);
+        window.setTimeout(function() {
+          $(".bar").css({"background-color":"#9E9E9E"});
+        }, 100);
+       });
 });
 // window.navigator = window.navigator || {};
 // navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
