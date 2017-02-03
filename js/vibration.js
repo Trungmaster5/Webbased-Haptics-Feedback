@@ -18,7 +18,7 @@ $(document).on("pagecreate","#pageone",function(){
       navigator.vibrate(100);
       // window.navigator.vibrate(1000);
       window.setTimeout(function() {
-        $(this).css({"background-color":"#9E9E9E"});
+        $('#vib-bar-100').css({"background-color":"#9E9E9E"});
       }, 100);
     });
 
@@ -27,7 +27,7 @@ $(document).on("pagecreate","#pageone",function(){
         navigator.vibrate(200);
         // window.navigator.vibrate(1000);
         window.setTimeout(function() {
-          $(this).css({"background-color":"#9E9E9E"});
+          $('#vib-bar-200').css({"background-color":"#9E9E9E"});
         }, 200);
       });
 
@@ -36,7 +36,7 @@ $(document).on("pagecreate","#pageone",function(){
           navigator.vibrate(300);
           // window.navigator.vibrate(1000);
           window.setTimeout(function() {
-            $(this).css({"background-color":"#9E9E9E"});
+            $('#vib-bar-300').css({"background-color":"#9E9E9E"});
           }, 300);
         });
 
@@ -45,7 +45,7 @@ $(document).on("pagecreate","#pageone",function(){
             navigator.vibrate(400);
             // window.navigator.vibrate(1000);
             window.setTimeout(function() {
-              $(this).css({"background-color":"#9E9E9E"});
+              $('#vib-bar-400').css({"background-color":"#9E9E9E"});
             }, 400);
           });
 
@@ -54,7 +54,7 @@ $(document).on("pagecreate","#pageone",function(){
               navigator.vibrate(500);
               // window.navigator.vibrate(1000);
               window.setTimeout(function() {
-                $(this).css({"background-color":"#9E9E9E"});
+                $('#vib-bar-500').css({"background-color":"#9E9E9E"});
               }, 500);
             });
 });
