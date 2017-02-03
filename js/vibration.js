@@ -17,7 +17,7 @@ $(document).on("pagecreate","#pageone",function(){
       $(this).css({"background-color":"red"});
       navigator.vibrate(100);
       // window.navigator.vibrate(1000);
-      setTimeout(function(this) {
+      window.setTimeout(function() {
         $(this).css({"background-color":"#9E9E9E"});
       }, 100);
     });
@@ -26,7 +26,7 @@ $(document).on("pagecreate","#pageone",function(){
         $(this).css({"background-color":"red"});
         navigator.vibrate(200);
         // window.navigator.vibrate(1000);
-        setTimeout(function(this) {
+        window.setTimeout(function() {
           $(this).css({"background-color":"#9E9E9E"});
         }, 200);
       });
@@ -35,7 +35,7 @@ $(document).on("pagecreate","#pageone",function(){
           $(this).css({"background-color":"red"});
           navigator.vibrate(300);
           // window.navigator.vibrate(1000);
-          setTimeout(function(this) {
+          window.setTimeout(function() {
             $(this).css({"background-color":"#9E9E9E"});
           }, 300);
         });
@@ -44,7 +44,7 @@ $(document).on("pagecreate","#pageone",function(){
           $(this).css({"background-color":"red"});
             navigator.vibrate(400);
             // window.navigator.vibrate(1000);
-            setTimeout(function(this) {
+            window.setTimeout(function() {
               $(this).css({"background-color":"#9E9E9E"});
             }, 400);
           });
@@ -53,7 +53,7 @@ $(document).on("pagecreate","#pageone",function(){
               $(this).css({"background-color":"red"});
               navigator.vibrate(500);
               // window.navigator.vibrate(1000);
-              setTimeout(function(this) {
+              window.setTimeout(function() {
                 $(this).css({"background-color":"#9E9E9E"});
               }, 500);
             });
