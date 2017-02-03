@@ -13,11 +13,39 @@ if (navigator.vibrate) {
 };
 
 $(document).on("pagecreate","#pageone",function(){
-  $('p').on("swipe",function(){
-      $('.button').css({"background-color":"red"});
+  $('#vib-bar-100').on("swipe",function(){
+      $('#vib-bar-100').css({"background-color":"red"});
       navigator.vibrate(100);
       // window.navigator.vibrate(1000);
+      $('#vib-bar-100').css({"background-color":"#9E9E9E"});
     });
+
+    $('#vib-bar-200').on("swipe",function(){
+        $('#vib-bar-200').css({"background-color":"red"});
+        navigator.vibrate(200);
+        // window.navigator.vibrate(1000);
+        $('#vib-bar-200').css({"background-color":"#9E9E9E"});
+      });
+
+      $('#vib-bar-300').on("swipe",function(){
+          $('#vib-bar-300').css({"background-color":"red"});
+          navigator.vibrate(300);
+          // window.navigator.vibrate(1000);
+          $('#vib-bar-300').css({"background-color":"#9E9E9E"});
+        });
+
+        $('#vib-bar-400').on("swipe",function(){
+            $('#vib-bar-400').css({"background-color":"red"});
+            navigator.vibrate(400);
+            // window.navigator.vibrate(1000);
+            $('#vib-bar-400').css({"background-color":"#9E9E9E"});
+          });
+          $('#vib-bar-500').on("swipe",function(){
+              $('#vib-bar-500').css({"background-color":"red"});
+              navigator.vibrate(500);
+              // window.navigator.vibrate(1000);
+              $('#vib-bar-500').css({"background-color":"#9E9E9E"});
+            });
 });
 // window.navigator = window.navigator || {};
 // navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
