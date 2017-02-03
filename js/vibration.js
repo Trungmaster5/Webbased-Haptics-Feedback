@@ -24,9 +24,9 @@ $(document).on("pagecreate","#pageone",function(){
         $(this).css({"background-color":"red"});
         navigator.vibrate(200);
         // window.navigator.vibrate(1000);
-        $(this).delay(200).queue(function(){
-          $(this).css({"background-color":"#9E9E9E"};
-        });
+        setTimeout(function() {
+          $(this).css({"background-color":"#9E9E9E"});
+        }, 200);
       });
 
       $('#vib-bar-300').on("swipe",function(){
