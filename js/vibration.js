@@ -14,39 +14,48 @@ if (navigator.vibrate) {
 
 $(document).on("pagecreate","#pageone",function(){
   $('#vib-bar-100').on("swipe",function(){
-      $('#vib-bar-100').css({"background-color":"red"});
+      $(this).css({"background-color":"red"});
       navigator.vibrate(100);
       // window.navigator.vibrate(1000);
-      $('#vib-bar-100').css({"background-color":"#9E9E9E"});
+      setTimeout(function(this) {
+        $(this).css({"background-color":"#9E9E9E"});
+      }, 100);
     });
 
     $('#vib-bar-200').on("swipe",function(){
         $(this).css({"background-color":"red"});
         navigator.vibrate(200);
         // window.navigator.vibrate(1000);
-        setTimeout(function() {
+        setTimeout(function(this) {
           $(this).css({"background-color":"#9E9E9E"});
         }, 200);
       });
 
       $('#vib-bar-300').on("swipe",function(){
-          $('#vib-bar-300').css({"background-color":"red"});
+          $(this).css({"background-color":"red"});
           navigator.vibrate(300);
           // window.navigator.vibrate(1000);
-          $('#vib-bar-300').css({"background-color":"#9E9E9E"});
+          setTimeout(function(this) {
+            $(this).css({"background-color":"#9E9E9E"});
+          }, 300);
         });
 
         $('#vib-bar-400').on("swipe",function(){
-            $('#vib-bar-400').css({"background-color":"red"});
+          $(this).css({"background-color":"red"});
             navigator.vibrate(400);
             // window.navigator.vibrate(1000);
-            $('#vib-bar-400').css({"background-color":"#9E9E9E"});
+            setTimeout(function(this) {
+              $(this).css({"background-color":"#9E9E9E"});
+            }, 400);
           });
+
           $('#vib-bar-500').on("swipe",function(){
-              $('#vib-bar-500').css({"background-color":"red"});
+              $(this).css({"background-color":"red"});
               navigator.vibrate(500);
               // window.navigator.vibrate(1000);
-              $('#vib-bar-500').css({"background-color":"#9E9E9E"});
+              setTimeout(function(this) {
+                $(this).css({"background-color":"#9E9E9E"});
+              }, 500);
             });
 });
 // window.navigator = window.navigator || {};
