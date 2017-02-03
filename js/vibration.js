@@ -13,6 +13,8 @@ if (navigator.vibrate) {
 };
 
 $(document).on("pagecreate","#pageone",function(){
+
+  //* Swipe left and right vibration *//
   $('#vib-bar-100').on("swipe",function(){
       $(this).css({"background-color":"red"});
       navigator.vibrate(100);
@@ -57,6 +59,19 @@ $(document).on("pagecreate","#pageone",function(){
                 $('#vib-bar-500').css({"background-color":"#9E9E9E"});
               }, 500);
             });
+
+   //* Swipe down vibration *//
+   $(".bar").swipe({
+     swipeDown:function(event, direction, distance, duration, fingerCount) {
+       $(this).css({"background-color":"red"});
+       navigator.vibrate(100);
+       // window.navigator.vibrate(1000);
+       window.setTimeout(function() {
+         $(".bar").css({"background-color":"#9E9E9E"});
+       }, 100);
+      }
+    });
+
 });
 // window.navigator = window.navigator || {};
 // navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;

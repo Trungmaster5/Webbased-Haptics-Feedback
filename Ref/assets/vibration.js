@@ -395,4 +395,3 @@ function doPrintout(num) {
 	var pattern = $('#play'+num).data('pattern');
 	$('#printout span').html('navigator.vibrate('+pattern+');');
 }
-
