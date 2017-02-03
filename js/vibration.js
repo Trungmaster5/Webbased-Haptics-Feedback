@@ -62,7 +62,7 @@ $(document).on("pagecreate","#pageone",function(){
 
    //* Swipe down vibration *//
    $(".bar").swipe({
-     swipeDown:function(event, direction, distance, duration, fingerCount) {
+     swipeUp:function(event, direction, distance, duration, fingerCount) {
        $(this).css({"background-color":"red"});
        navigator.vibrate(100);
        // window.navigator.vibrate(1000);
